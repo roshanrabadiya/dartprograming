@@ -24,6 +24,8 @@ void main() {
   //var message = "My name is " + name;
   var message = "My name is $name"; // this is string Interpolation
   var printMarks = "Marks of $name is $marks";
+//print("My name contains " + name.length.toString());
+  print("My name contains ${name.length}");
   print(message);
   print(printMarks);
 }
