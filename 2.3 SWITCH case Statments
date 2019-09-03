@@ -1,0 +1,29 @@
+void main() {
+  
+  //switch case statment: Applicable for only 'int' and 'String'
+  
+  String grade = "A";
+  
+  switch(grade){
+      
+    case 'A':
+      print("Excellent grade of A");
+      break;
+      
+    case 'B':
+      print("Very Good !");
+      break;
+      
+    case 'C':
+      print("Good enough. But Work Hard");
+      break;
+      
+    case 'F': 
+      print("you have faild !");
+      break;
+      
+    default:
+      print("you have enter invalid Grade.");
+  }
+  
+}
