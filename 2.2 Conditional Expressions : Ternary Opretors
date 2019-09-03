@@ -1,0 +1,29 @@
+void main() {
+   // 1. condition ? exp1 : exp2
+  // If condition is true,then exp1 evaluats (and returns its value) 
+  // otherwise, eveluates and returns the value of expr2.
+  int a = 2;
+  int b = 3;
+  
+  if(a < b){
+    print("$a is smaller");
+  }
+  else{
+    print("$b is smaller");
+  }
+  
+  a < b ? print("$a is smaller") : print("$a is smaller");
+  
+  
+  
+  
+  //2. exp1 ?? exp2
+  // if exp1 is non-null, returns its value; otherwise evaluates and
+  // returns the value of expr2.
+  
+  String name;
+  
+  String nameToPrint = name ?? "Guest User";
+  print(nameToPrint);
+  
+}
