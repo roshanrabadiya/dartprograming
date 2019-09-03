@@ -1,0 +1,47 @@
+void main() {
+  
+  //if statment
+  var salary = 9000;
+  
+  if(salary > 10000){
+    print("Congretulation you got promotions.");
+  }else{
+    print("Sorry! your salary is less then 10000.");
+  }
+  
+  
+  // IF ELSE IF Ladder statments
+  
+  var mark = 76;
+  
+  if(mark >=90 && mark < 100)
+  {
+    print("A+ Grade");
+  } 
+  else if(mark >=80 && mark < 90)
+  {
+    print("A Grade");
+  }
+  else if(mark >=70 && mark < 80)
+  {
+    print("B+ Grade");
+  }
+  else if(mark >=60 && mark < 70)
+  {
+    print("B Grade");
+  }
+  else if(mark >=50 && mark < 60)
+  {
+    print("C+ Grade");
+  }
+  else if(mark >=30 && mark < 50)
+  {
+    print("C Grade");
+  }
+  else if(mark > 0 && mark < 30){
+    print("You are fail.");
+  }
+  else {
+    print("You enter invalid marks.");
+  }
+}
