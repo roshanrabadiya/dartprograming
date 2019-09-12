@@ -1,0 +1,47 @@
+// Objectives 
+// Static Methods and variables
+
+void main(){
+// we can not Access the static member using the Object 
+//   var circle = Circle();
+//   circle.pi; //Error
+  
+  print(Circle.pi);
+  Circle.calculateArea();
+  
+ //If you not Declere the constant then it's value will be change like this 
+//   print("");
+//   print("Before Changes ${Circle.pi}");
+//   Circle.pi = 5.17;
+//   print("After Changes ${Circle.pi}");
+  
+  var circle1 = Circle();
+  circle1.otherFunction();
+  
+  
+}
+class Circle{
+  //constant never change the value of variable
+  static const double pi = 3.14;
+  static int maxRadius = 3;
+  String color;
+  
+  static void calculateArea(){
+    print("some code");
+    
+    //you can not use the normal function in static member
+    //Circle.otherFunction(); //Error
+    
+    // you can not Access the Instance Variable in The Static Method
+    // this.color; //Error
+  }
+  
+  // Heare in Normal Function you can use the Static Members as well as Instance variable
+  void otherFunction(){
+   
+    calculateArea();
+    print(maxRadius);
+    this.color = "Blue";
+    print(color);
+  }
+}
